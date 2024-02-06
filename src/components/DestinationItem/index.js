@@ -1,16 +1,14 @@
-// Write your code here
+/* Write your CSS here */
 import './index.css'
 
 const DestinationItem = props => {
   const {destinationDetails} = props
-  const {id, name, imgUrl} = destinationDetails
+  const {imgUrl, name} = destinationDetails
 
   return (
-    <li>
-      <div>
-        <img src={imgUrl} alt={name} />
-        <p>{name}</p>
-      </div>
+    <li className="destination-item">
+      <img src={imgUrl} alt={name} className="destination-image" />
+      <p className="name">{name}</p>
     </li>
   )
 }
